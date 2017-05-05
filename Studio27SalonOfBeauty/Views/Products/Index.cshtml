@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<head>
+    @Styles.Render("~/Content/Styles/Products.css")
+</head>
+    <div class="jumbotron">
+        <img src="../../Content/img/K-BLONDE.jpg" />
+    </div>
+
+@if (User.IsInRole("Admin"))
+{
+    <h3 style="color:#222222;text-align:center">Select a product category that you want to edit or delete</h3>
+}
+<br />
+<div class="row">
+    <div class="col col-lg-4">
+            <img class="img img-thumbnail" src="../../Content/img/Products/CareLine.jpg" width="269" height="154"  alt="">
+        <h3>
+            @Html.ActionLink("Care Line", "CareLine", "Products")
+        </h3>
+    </div>
+    <div class="col col-lg-4">
+            <img class="img img-thumbnail" src="../../Content/img/Products/Man.jpg">
+        <h3>
+            @Html.ActionLink("Man", "Man", "Products")
+        </h3>
+    </div>
+    <div class="col col-lg-4">
+            <img class="img img-thumbnail" src="../../Content/img/Products/SoPure.jpg" width="269" height="154">
+        <h3>
+            @Html.ActionLink("So Pure","SoPure","Products")
+        </h3>
+    </div>
+</div>

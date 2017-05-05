@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Studio27SalonOfBeauty.Models.EntityModels.Product>
+
+@{
+    ViewBag.Title = "CareLine";
+}
+<head>
+    @Styles.Render("~/Content/Styles/CareLine.css")
+</head>
+
+<div>
+    <img class="img-responsive" style="width: 100%;height: 350px" src="../../Content/img/Products/keune-careline.jpg" />
+</div>
+<div class="row">
+    @foreach (var item in Model)
+    {
+            <div class="col col-md-3">
+               <img src="@String.Format("data:image/jpg;base64,{0}", item.ProductImage)" />
+                <br />
+               @Html.DisplayFor(modelItem => item.Name)<span> -</span>
+               @Html.DisplayFor(modelItem => item.Description)
+                <p>@Html.ActionLink("Детайли", "Details", "Products", new { id = item.Id }, null)</p>
+                @if (User.IsInRole("Admin"))
+                {
+                    @Html.ActionLink("Edit","Edit", "Products", new { area= "",id = item.Id },null)
+                }
+                @if (User.IsInRole("Admin"))
+                {
+                    @Html.ActionLink("Delete","Delete", "Products", new {area="", id = item.Id },null)
+                }
+                
+            </div>
+
+
+          
+    }
+</div>

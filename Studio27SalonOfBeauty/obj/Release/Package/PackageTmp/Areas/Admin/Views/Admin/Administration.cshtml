@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Admin panel";
+}
+<div style="margin-top:50px" class="row">
+    <div class="cow col-md-4">
+        <div style="height:390px" class="btn btn-default">
+            <img style="width:256px;height:256px"src="../../Content/img/customermanagement.jpg" />
+            <br />
+            <p style="margin-top:35px">@Html.ActionLink("Customers", "Customers", "Admin")</p>
+        </div>
+    </div>
+    <div class="cow col-md-4">
+        <div style="height:390px" class="btn btn-default">
+            <img style="width:256px;height:256px" src="../../Content/img/schedule.png" />
+            <p style="margin-top:35px">@Html.ActionLink("Schedule", "Schedule", "Admin")</p>
+        </div>
+    </div>
+    <div class="cow col-md-4">
+        <div class="btn btn-default">
+            <p>Products</p>
+            <img style="width:256px;height:256px" src="../../Content/img/products.jpg" />
+            <p>@Html.ActionLink("Add", "Add", "Products", new { area = "" }, null)</p>
+            <p>@Html.ActionLink("Edit", "Index", "Products", new { area = ""}, null)</p>
+            <p>@Html.ActionLink("Delete", "Index", "Products", new { area = "" }, null)</p>
+        </div>
+    </div>
+    </div>

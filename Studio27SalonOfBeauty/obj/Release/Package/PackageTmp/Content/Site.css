@@ -1,0 +1,66 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: beige;
+    font-family:Verdana;
+    color:beige;
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#background {
+    background-color: black;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.navbar{
+    font-size:17px; 
+}
+.navbar.navbar-inverse.navbar-fixed-top li a{
+    color:gainsboro;
+}
+.navbar.navbar-inverse.navbar-fixed-top li a:hover{
+    color:white;
+}
+a.navbar-brand{
+    color:gainsboro !important;
+}
+.jumbotron
+{
+    background-color:#222222;
+}
+
+.details-table{
+    color:#222222;
+    margin-top:40px;
+}
+.register-form{
+    color:#222222;
+}
+.back-link a{
+    font-size:20px;
+    color:#222222;
+}
+.add-product.form-horizontal h4{
+    color:#222222;
+    margin-top:50px;
+}
+.add-product.form-horizontal{
+    color:#222222;
+}

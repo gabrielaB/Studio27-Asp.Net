@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Studio27Context-Web.config Connection String" description="Studio27Context Connection String used in web.config by the application to access the database." defaultValue="data source=.;initial catalog=Studio27DataBase;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\User\\documents\\visual\ studio\ 2015\\Projects\\Studio27SalonOfBeauty\\Studio27SalonOfBeauty\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Studio27Context']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,10 @@
+﻿div address{
+    font-size: 20px;
+}
+.jumbotron img {
+    width: 25%;
+    height: 250px;
+}
+.jumbotron div{
+    display:inline-block;
+}

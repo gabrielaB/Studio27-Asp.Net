@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Studio27SalonOfBeauty.Models.EntityModels.Product>
+@{
+    ViewBag.Title = "SoPure";
+}
+<head>
+    @Styles.Render("~/Content/Styles/CareLine.css")
+</head>
+
+
+<div>
+    <img style="width: 100%;height: 350px;margin-top:50px" src="../../Content/img/Products/so-pure.jpg" />
+</div>
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details","Products")
+            </td>
+        </tr>
+    }
+
+</table>*@
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col col-md-3">
+            <img src="@String.Format("data:image/jpg;base64,{0}", item.ProductImage)" />
+            <br />
+            @Html.DisplayFor(modelItem => item.Name)<span> -</span>
+            @Html.DisplayFor(modelItem => item.Description)
+            <p>@Html.ActionLink("Детайли", "Details", "Products", new { id = item.Id }, null)</p>
+            @if (User.IsInRole("Admin"))
+                {
+                @Html.ActionLink("Edit", "Edit", "Products", new { area = "", id = item.Id }, null)
+            }
+            @if (User.IsInRole("Admin"))
+                {
+                @Html.ActionLink("Delete", "Delete", "Products", new { area = "", id = item.Id }, null)
+            }
+        </div>
+    }
+</div>
+
