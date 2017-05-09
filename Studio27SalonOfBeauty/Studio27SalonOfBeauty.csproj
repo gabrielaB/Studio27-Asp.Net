@@ -214,6 +214,8 @@
     <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
     <Compile Include="Areas\Admin\Models\CustomersViewModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
@@ -312,6 +314,7 @@
     <Content Include="Areas\Admin\Views\Admin\Schedule.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\Administration.cshtml" />
     <Content Include="Areas\Admin\Views\Admin\Customers.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_LoginPartial.cshtml" />
     <None Include="Properties\PublishProfiles\Studio27 - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\Studio27 - FTP %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\Studio27 - FTP.pubxml" />
@@ -323,6 +326,8 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -376,6 +381,9 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Products.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Error\InvalidSendMailModel.cshtml" />
+    <Content Include="Views\Contact\SuccessfullySendMail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Studio27SalonOfBeauty.Data\Studio27SalonOfBeauty.Data.csproj">

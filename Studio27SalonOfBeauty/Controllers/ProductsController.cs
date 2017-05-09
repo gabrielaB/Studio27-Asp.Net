@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
+﻿using System.Collections.Generic;
 using System.Net;
 using System.Web.Mvc;
 using Studio27SalonOfBeauty.Models.EntityModels;
-
 using Studio27SalonOfBeauty.Services;
-using System.IO;
 using Studio27SalonOfBeauty.Models.BindingModels;
 using Studio27SalonOfBeauty.Models.ViewModels.Products;
 

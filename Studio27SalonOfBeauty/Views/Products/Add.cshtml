@@ -13,7 +13,7 @@
     
     <div class="add-product form-horizontal">
         
-        <h4>Добавяне на продукт</h4>
+        <h4>Add product</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -46,11 +46,11 @@
         </div>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Добави" class="btn btn-default" />
+                <input type="submit" value="Add" class="btn btn-default" />
             </div>
         </div>
     </div>
 }
 <div class="back-link">
-    @Html.ActionLink("Назад", "Administration","Admin", new { area = "" }, null)
+    @Html.ActionLink("Back", "Administration","Admin", new { area = "" }, null)
 </div>

@@ -97,6 +97,7 @@
   <ItemGroup>
     <Compile Include="BindingModels\AddProductBinding.cs" />
     <Compile Include="BindingModels\EditProductBinding.cs" />
+    <Compile Include="BindingModels\SendMailBinding.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="EntityModels\ApplicationUser.cs" />
     <Compile Include="EntityModels\Customer.cs" />
@@ -132,6 +133,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Attributes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-1.8.0.intellisense.js" />
+    <Content Include="Scripts\jquery-1.8.0.js" />
+    <Content Include="Scripts\jquery-1.8.0.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

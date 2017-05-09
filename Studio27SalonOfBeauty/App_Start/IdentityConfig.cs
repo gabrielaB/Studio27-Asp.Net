@@ -18,6 +18,11 @@ namespace Studio27SalonOfBeauty
             // Plug in your email service here to send an email.
             return Task.FromResult(0);
         }
+
+        //internal Task SendContactForm(ContactForm model)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 
     public class SmsService : IIdentityMessageService
