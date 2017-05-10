@@ -33,6 +33,7 @@ namespace Studio27SalonOfBeauty.Controllers
 
             return View();
         }
+
         public ActionResult HairTeam()
         {
 

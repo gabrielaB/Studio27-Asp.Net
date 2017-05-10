@@ -1,32 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Studio27SalonOfBeauty;
 using Studio27SalonOfBeauty.Controllers;
-
 namespace Studio27SalonOfBeauty.Tests.Controllers
 {
     [TestClass]
     public class HomeControllerTest
     {
-        [TestMethod]
-        public void Index()
+        private HomeController _controller;
+
+        [TestInitialize]
+        public void Init()
         {
-            // Arrange
-            HomeController controller = new HomeController();
-
-            // Act
-            ViewResult result = controller.Index() as ViewResult;
-
-            // Assert
-            Assert.IsNotNull(result);
+            this._controller = new HomeController();
         }
 
         [TestMethod]
-        public void About()
+        public void Index_Should_Return_Default_Value()
+        {
+        }
+
+        [TestMethod]
+        public void About_Should_Return_Default_Value()
         {
             // Arrange
             HomeController controller = new HomeController();
@@ -52,3 +46,4 @@ namespace Studio27SalonOfBeauty.Tests.Controllers
         }
     }
 }
+

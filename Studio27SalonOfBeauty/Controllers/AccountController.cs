@@ -150,9 +150,10 @@ namespace Studio27SalonOfBeauty.Controllers
             {
                 var user = new ApplicationUser
                 {
-                    UserName = model.Name,
+                    UserName = model.Email,
                     Email = model.Email,
-                    PhoneNumber = model.PhoneNumber
+                    PhoneNumber = model.PhoneNumber,
+                    Name = model.Name
                 };
 
                 var result = await UserManager.CreateAsync(user, model.Password);
